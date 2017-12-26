@@ -1,5 +1,5 @@
 # Introduction
-The server side of CoDraw app (ionic 3 version), which is implemented by node.js and socket.io.
+基于ionic3与socket.io制作，可同时多终端多设备同时绘图或打字，根据url后roomID可实现分频道画图
 
 ## Getting Started
 打开server文件夹，执行
