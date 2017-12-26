@@ -1,0 +1,126 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-base64-to-gallery",
+        "scope": null,
+        "escapedName": "cordova-base64-to-gallery",
+        "name": "cordova-base64-to-gallery",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/wcweng/Documents/Github/ionic3-collaborative-drawing/node_modules"
+    ]
+  ],
+  "_from": "cordova-base64-to-gallery@latest",
+  "_id": "cordova-base64-to-gallery@4.1.2",
+  "_inCache": true,
+  "_location": "/cordova-base64-to-gallery",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-base64-to-gallery-4.1.2.tgz_1481788514507_0.42217883677221835"
+  },
+  "_npmUser": {
+    "name": "stefano_magrassi",
+    "email": "stefano.magrassi@gmail.com"
+  },
+  "_npmVersion": "4.0.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-base64-to-gallery",
+    "scope": null,
+    "escapedName": "cordova-base64-to-gallery",
+    "name": "cordova-base64-to-gallery",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-base64-to-gallery/-/cordova-base64-to-gallery-4.1.2.tgz",
+  "_shasum": "698b4e13de3885cc0db2301e28eb8c7eb7f3b5fd",
+  "_shrinkwrap": null,
+  "_spec": "cordova-base64-to-gallery",
+  "_where": "/Users/wcweng/Documents/Github/ionic3-collaborative-drawing/node_modules",
+  "author": {
+    "name": "StefanoMagrassi",
+    "email": "stefano.magrassi@gmail.com",
+    "url": "http://thinkwritedone.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Nexxa/cordova-base64-to-gallery/issues"
+  },
+  "contributors": [
+    {
+      "name": "Simba Zhang",
+      "email": "solderzzc@gmail.com",
+      "url": "http://www.tiegushi.com"
+    }
+  ],
+  "cordova": {
+    "id": "cordova-base64-to-gallery",
+    "platforms": [
+      "ios",
+      "android",
+      "wp8"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova plugin to save base64 data as a png image into the device",
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "nodemsg": "1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "698b4e13de3885cc0db2301e28eb8c7eb7f3b5fd",
+    "tarball": "https://registry.npmjs.org/cordova-base64-to-gallery/-/cordova-base64-to-gallery-4.1.2.tgz"
+  },
+  "engines": [
+    {
+      "cordova": ">=3.0.0"
+    },
+    {
+      "node": ">=0.12"
+    }
+  ],
+  "gitHead": "096fada58846511263b50be18bc9b9ca46861d93",
+  "homepage": "https://github.com/Nexxa/cordova-base64-to-gallery#readme",
+  "keywords": [
+    "image",
+    "base64",
+    "save",
+    "photo library",
+    "gallery",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-wp8"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "stefano_magrassi",
+      "email": "stefano.magrassi@gmail.com"
+    }
+  ],
+  "name": "cordova-base64-to-gallery",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexxa/cordova-base64-to-gallery.git"
+  },
+  "scripts": {
+    "bump": "node ./scripts/bump_version",
+    "lint": "eslint www/base64ToGallery.js",
+    "postversion": "npm run bump",
+    "prepublish": "npm test",
+    "test": "npm run lint"
+  },
+  "version": "4.1.2"
+}

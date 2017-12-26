@@ -1,0 +1,49 @@
+<ion-toolbar id="top-toolbar">
+    <ion-buttons left>
+        <button icon-only ion-button (click)="onEnableDraw()">
+            <ion-icon [style.color]="canDraw? 'blue' : 'black'" name="brush"></ion-icon>
+        </button>
+        <button icon-only ion-button (click)="onDisableDraw()">
+            <ion-icon [style.color]="!canDraw && !canErase ? 'blue' : 'black'" name="text"></ion-icon>
+        </button>
+        <button icon-only ion-button (click)="onSelectColor()">
+            <ion-icon [style.color]="currentColor" name="color-palette"></ion-icon>
+        </button>
+        <button icon-only ion-button (click)="onSelectSize()">
+            <ion-icon [style.color]="'black'" name="settings"></ion-icon>
+        </button>
+        <!--<button icon-only ion-button (click)="undo()">
+            <ion-icon [style.color]="'blue'" name="undo"></ion-icon>
+        </button>
+        <button icon-only ion-button (click)="redo()">
+            <ion-icon [style.color]="'blue'" name="redo"></ion-icon>
+        </button>-->
+        <button icon-only ion-button (click)="onEnableErase()">
+            <ion-icon [style.color]="canErase? 'blue' : 'black'" name="square"></ion-icon>
+        </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+        <button icon-left ion-button (click)="sync()">
+            <ion-icon [style.color]="isOnline ? 'green' : 'red'" name="sync"></ion-icon>
+            <b>同步</b>
+        </button>
+    </ion-buttons>
+</ion-toolbar>
+  
+ <canvas (mouseleave)="!gesture && handleDrawingLeave()" #myCanvas 
+ (touchstart)="handleStart($event)" (touchmove)="handleMove($event.touches[0].pageX, $event.touches[0].pageY)" (touchend)="handleStop()"
+ (mousedown)="!gesture && handleMouseDown($event)" (mousemove)="!gesture && handleMouseMove($event.pageX, $event.pageY)" (mouseup)="!gesture && handleMouseUp()"
+ ></canvas>
+  
+ <ion-toolbar id="bottom-toolbar">
+    <ion-buttons left>
+        <button color="dark" ion-button icon-only (click)="delete()"><ion-icon name="trash"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons Right>
+        <button color="dark" ion-button icon-left (click)="saveToGallery()">
+            <ion-icon name="document"></ion-icon>
+            <b>截图</b>
+        </button>
+    </ion-buttons>
+</ion-toolbar>
